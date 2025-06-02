@@ -22,9 +22,15 @@ const userNameRegister = document.getElementById("register-username")
 const passwordRegister = document.getElementById("register-password")
 const register = document.getElementById("register-user")
 
-console.log(container);
-
-
+const nav = document.querySelector(".nav-icon");
+const hiddenNav = document.querySelector(".hidden-nav");
+nav.addEventListener("click",()=>{
+    if(hiddenNav.style.display == "block"){
+        hiddenNav.style.display = "none"
+    }else{
+        hiddenNav.style.display = "block"
+    }
+})
 
 loginBtn.addEventListener("click",(e)=>{
     e.preventDefault();
@@ -200,3 +206,8 @@ function limt(){
     }
 }
 
+// document.getElementsByClassName("nav-icon").addEventListener("click",()=>{
+//     document.getElementsByClassName("hidden-nav").style.display="block";
+// })
+
+console.log("hello");

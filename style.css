@@ -112,6 +112,7 @@ body{
     display: flex;
     /* align-items: center; */
     justify-content:center;
+    overflow: hidden;
     /* margin-bottom: 50px; */
 }
 .small-container{
@@ -164,7 +165,7 @@ body{
     margin:7rem auto;
 }
 .exclusive{
-    height:100vh;
+    height:100%;
     background:radial-gradient(#fff6f6,#ffe0e0);
     display: flex;
     align-items: center;
@@ -642,6 +643,17 @@ form{
     text-align: center;
 }
 
+.nav-icon{
+    width: 10%;
+    display: none;
+    right: 10px;
+    position: absolute;
+
+}
+.nav-icon img{
+    width: 50%;
+    object-fit: contain;
+}
 /* responsive */
 
 @media screen and (max-width:1300px) {
@@ -666,15 +678,50 @@ form{
     }
     
 }
+
+/*hidden nav*/
+.hidden-nav{
+    margin-top: 30px;
+    padding:0 2rem;
+    display: none;
+    
+}
+.hidden-nav ul{
+    padding: 0;
+    font-size: 1.3rem;
+}
+.hidden-nav li{
+    margin-bottom: 1rem;
+}
+.hidden-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+
 @media screen and (max-width:950px) {
-    .li{
+    .nav-bar{
+        margin:2rem 0 0 0 ;
+        overflow-x: scroll;
+        /* justify-content: space-around; */
+    }
+    #nav ul {
+        /* display:none; */
+        margin-right: 2rem;
+    }
+    /* .li{
         display: none;
-    }
+    } */
     #cart{
-        width:60px;
+        width:44px;
     }
-    .footer{
-        flex-wrap: wrap;
+    .row-1{
+        display: block;
+        padding: 0;
+    }
+    .row-1 .col{
+        text-align: center;
+        margin:2rem;
     }
     body{
         width: 100%;
@@ -682,6 +729,96 @@ form{
         flex-direction: column;
         justify-content: center;
     }
+    #small img{
+        margin: 20px auto;
+
+    }
+    #col-1{
+        margin: auto;
+    }
+    .col-2{
+        margin: auto;
+    }
+    #small img{
+        padding-left:0;
+    }
+
+    /* account page*/
+    .login-and-register{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        padding: 2rem 0;
+        text-align: center;
+        
+    }
+    .login-and-register img{
+        width: 60%;
+        margin-bottom: 3rem;
+    }
+    .all-items{
+        margin: auto;
+        width: 350px;
+    }
+    .form-container{
+        overflow: hidden;
+        gap: 6rem;
+    }
+    .form-container form{
+        width: 100%;
+    }
+    .form-container form input{
+        width: 200px;
+    }
+    #login{
+          padding-left: 4rem;  
+    }
+    #register{
+        height: 300px;
+    }
+    /*caet page*/
+    .cart-container{
+        padding:0;
+        width: 100%;
+        overflow:hidden;
+    }
+    .cart-detal-conatoner{
+        padding-left: 1rem;
+        align-items: start;
+    }
+    .total{
+            justify-content: start;
+            gap: 50%;
+    }
+
+    /*product detail page*/
+    .dtails-container{
+        align-items: center;
+        /* padding:30px 40px; */
+    }
+    .small-imgs{
+        width: auto;
+    }
+    .img-container{
+        width: auto;
+    }
+
+     /*product page*/
+     .allproduts {
+        margin:0 2rem;
+        padding:0 20px;
+    }
+     
+    /*nav-bar*/
+    #nav{
+        display: none;
+    }
+    .nav-icon{
+        display: block;
+    }
+    
+
+
 }
 @media screen and (max-width:600px) {
     #logo{
@@ -695,6 +832,89 @@ form{
     body{
         width: 100%;
     }
+    #col-1{
+        padding: 0;
+    }
+    #col-1 h1{
+        padding: 0;
+    }
+    .col-2 img{
+        width: 250px;
+    }
+    #small img{
+        width: 250px;
+    }
+    .feature{
+        margin: 3rem;
+        overflow: hidden;
+    }
+    .col-4 img{
+        width: 100%;
+    }
+    #offer{
+        width: 200px;
+    }
+    .last-container{
+        width: 100%;
+    }
+    .last-container{
+        margin: 5rem 0;
+    }
+    .col-3{
+        width: 70%;
+        margin: 1rem;
+    }
+
+    /*account page*/
+    .login-and-register img{
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+     .all-items{
+        margin: auto;
+        width: 250px;
+    }
+    .form-container{
+        overflow: hidden;
+        gap: 6rem;
+    }
+    .form-container form{
+        width: 100%;
+    }
+    .form-container form input{
+        width: 200px;
+    }
+    #login{
+          padding-left: 10px;  
+    }
+    /*product page*/
+    .allproduts {
+        display: block;
+        text-align: center;
+        margin:auto;
+        padding:0 20px;
+        margin-bottom: 2rem;
+    }
+
+     /*product detail page*/
+     .dtails-container{
+        display: block;
+       
+    }
+    .colums{
+        margin: auto;
+    }
+    .colums-2{
+        margin: auto;
+    }
+    .small-imgs{
+        width: auto;
+    }
+    .img-container{
+        width: auto;
+    }
+
+
 }
 
 
