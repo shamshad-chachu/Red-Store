@@ -651,7 +651,7 @@ form{
 
 }
 .nav-icon img{
-    width: 50%;
+    width: 68%;
     object-fit: contain;
 }
 /* responsive */
@@ -714,6 +714,10 @@ form{
     } */
     #cart{
         width:44px;
+    }
+    .nav-icon img{
+        margin-top: 15%;
+        width: 5rem;
     }
     .row-1{
         display: block;
@@ -828,6 +832,10 @@ form{
     }
     .nav-bar{
         margin: 24px 30px;
+    }
+    .nav-icon img{
+        margin-top: 43%;
+        width: 100%;
     }
     body{
         width: 100%;
